@@ -1,0 +1,164 @@
+{% import "_brand.html" as brand %}{% set logo_url = brand_logo_url(request) %}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FrontDesk AI is a self-hosted AI receptionist for your website. It answers visitors from your knowledge base and books appointments into your admin dashboard.">
+  <title>FrontDesk AI · Your always-ready AI receptionist</title>
+  {% if logo_url %}<link rel="icon" href="{{ logo_url }}">{% else %}<link rel="icon" type="image/svg+xml" href="/static/favicon.svg">{% endif %}
+  <script src="/static/vendor/tailwindcss.js"></script>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body class="bg-white text-[#17233d] antialiased scroll-smooth">
+<header class="absolute top-0 inset-x-0 z-20">
+ <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[88px] flex items-center justify-between gap-4" aria-label="Main navigation"><a href="/" class="flex items-center gap-2.5 text-white font-semibold text-[17px] tracking-tight">{{ brand.brand_mark(logo_url, "!w-9 !h-9") }}FrontDesk AI</a><div class="hidden md:flex items-center gap-8 text-[13px] text-slate-300"><a class="hover:text-white" href="#product">Product</a><a class="hover:text-white" href="#features">Features</a><a class="hover:text-white" href="#benefits">Why FrontDesk</a></div><div class="flex items-center gap-2 sm:gap-4"><a href="/chat" class="text-xs sm:text-[13px] text-slate-300 hover:text-white hidden sm:block">Visitor chat</a><a href="/admin/login" class="rounded-lg bg-white text-[#3443b7] text-xs sm:text-[13px] font-semibold px-4 py-2.5 hover:bg-slate-100">Live demo <span aria-hidden="true">↗</span></a></div></nav>
+</header>
+<main>
+<section class="relative overflow-hidden bg-[#141c39]">
+ <div class="absolute inset-0 landing-grid opacity-[.09]"></div><div class="absolute w-[700px] h-[700px] -top-80 right-0 rounded-full bg-[#7568e6] blur-[150px] opacity-25"></div><div class="absolute w-[600px] h-[500px] -bottom-96 -left-32 bg-[#1eaaad] rounded-full blur-[140px] opacity-[.13]"></div>
+ <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pt-36 pb-20 lg:pt-40 lg:pb-24 grid lg:grid-cols-[.95fr_1.05fr] gap-14 lg:gap-12 items-center">
+  <div class="reveal"><div class="inline-flex items-center gap-2 border border-white/15 bg-white/[.06] text-[#c8d3ff] rounded-full px-3 py-1.5 text-[10px] sm:text-[11px] font-medium tracking-wide"><span class="w-1.5 h-1.5 rounded-full bg-[#5cdcc4]"></span> AI RECEPTIONIST FOR SERVICE BUSINESSES</div><h1 class="text-white font-semibold tracking-[-.045em] leading-[1.09] text-[32px] sm:text-[54px] lg:text-[57px] mt-7">Answers questions.<br>Books appointments.<br><span class="text-[#9caaff]">Never sleeps.</span></h1><p class="mt-6 text-slate-300 text-[15px] sm:text-[17px] leading-[1.8] max-w-[540px]">FrontDesk AI is your website's 24/7 receptionist. It chats with visitors, answers questions about your services, prices and hours, and books appointments into open slots. Every booking lands in your admin dashboard, so you never miss a client again.</p><div class="mt-8 flex flex-col sm:flex-row gap-3"><a href="/admin/login" class="inline-flex items-center justify-center gap-3 rounded-xl bg-[#6d7ef1] text-white px-6 py-3.5 text-sm font-semibold shadow-[0_8px_30px_-6px_#7080ed88] hover:bg-[#7b8bf4]">Explore the live demo <span aria-hidden="true">→</span></a><a href="/chat" class="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white/[.04] text-white px-6 py-3.5 text-sm font-medium hover:bg-white/10">Try visitor chat <span class="ml-2" aria-hidden="true">↗</span></a></div><div class="flex items-center gap-2 mt-5 text-[11px] text-slate-400"><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m5 10 3 3 7-7"/><circle cx="10" cy="10" r="8"/></svg>Try it as a visitor, then see the booking land in the admin.</div>
+  <div class="mt-10 grid grid-cols-3 gap-3 sm:gap-5 max-w-xl border-t border-white/10 pt-7"><div><div class="text-white text-[15px] sm:text-lg font-semibold leading-tight">24/7</div><div class="text-[10px] sm:text-[11px] text-slate-400 mt-1 leading-snug">Answers visitors day and night</div></div><div><div class="text-white text-[15px] sm:text-lg font-semibold leading-tight">Instant booking</div><div class="text-[10px] sm:text-[11px] text-slate-400 mt-1 leading-snug">Into open slots, within your hours</div></div><div><div class="text-white text-[15px] sm:text-lg font-semibold leading-tight">One dashboard</div><div class="text-[10px] sm:text-[11px] text-slate-400 mt-1 leading-snug">Appointments, knowledge base and settings</div></div></div></div>
+  <div class="relative lg:pl-4"><div class="absolute -inset-4 bg-gradient-to-tr from-[#5a6eea]/30 to-[#9e79c8]/10 rounded-[32px] blur-2xl"></div><div class="relative rounded-2xl overflow-hidden screenshot-shadow border border-white/10"><img src="/static/04-chat-greeting.jpg" width="1440" height="810" class="w-full h-auto" alt="FrontDesk AI visitor chat welcoming a customer to the fictional Lumen Dental Studio" fetchpriority="high"></div><div class="relative bg-[#202a4b]/95 border border-white/10 rounded-2xl p-4 sm:p-5 mt-5 sm:-mt-10 sm:ml-10 sm:mr-5 shadow-2xl"><div class="flex items-center gap-3"><span class="w-10 h-10 rounded-xl bg-[#e9faf5] text-[#21a284] grid place-items-center shrink-0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 5v3m12-3v3M5 10h14M6 4h12a1 1 0 0 1 1 1v15H5V5a1 1 0 0 1 1-1Z"/><path d="m9 15 2 2 4-4"/></svg></span><div class="min-w-0 flex-1"><p class="text-[13px] font-medium text-white">From question to scheduled appointment</p><p class="text-[11px] text-slate-400 mt-1">One seamless visitor conversation</p></div><span class="w-2 h-2 shrink-0 bg-[#5cdcc4] rounded-full"></span></div></div><p class="text-[10px] text-slate-500 mt-4">Actual visitor workflow, shown with a fictional dental studio.</p></div>
+ </div>
+</section>
+
+<section id="product" class="bg-[#f5f7fc] py-20 sm:py-28 border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-[.8fr_1.2fr] gap-12 lg:gap-20 items-center">
+    <div>
+      <p class="text-[#5064eb] text-[11px] uppercase tracking-[.18em] font-semibold">Product</p>
+      <h2 class="text-[31px] sm:text-[39px] font-semibold tracking-[-.035em] leading-tight mt-4">An AI receptionist for your website.</h2>
+      <p class="text-slate-500 text-sm leading-[1.85] mt-5">FrontDesk AI chats with people who visit your site. It answers from your own knowledge base — services, prices, hours and FAQs — and books appointments into free slots within your opening hours. You share a receptionist link from Settings. Every booking, and the conversation behind it, appears in your admin dashboard.</p>
+    </div>
+    <div>
+      <div class="rounded-2xl overflow-hidden screenshot-shadow"><img src="/static/admin-demo-dashboard.png" width="1920" height="1113" loading="lazy" class="w-full h-auto" alt="FrontDesk AI admin demo dashboard showing appointment metrics, conversation activity, upcoming bookings and the visitor inbox"></div>
+      <p class="text-[11px] text-slate-400 text-center mt-4">Actual admin demo dashboard · Lumen Dental Studio · fictional demonstration data</p>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 mt-16 sm:mt-20">
+    <p class="text-[#5064eb] text-[11px] uppercase tracking-[.18em] font-semibold">How it works</p>
+    <h3 class="text-[22px] sm:text-[26px] font-semibold tracking-[-.03em] mt-3">From the first question to a booking you can see.</h3>
+    <div class="grid md:grid-cols-3 gap-6 mt-10">
+      <article class="rounded-2xl bg-white border border-[#edf0f6] p-7 sm:p-8">
+        <span class="inline-grid place-items-center h-10 w-10 rounded-xl text-xs font-semibold" style="background:#5064eb14;color:#5064eb">01</span>
+        <h4 class="text-[18px] font-semibold tracking-tight mt-6">A visitor asks</h4>
+        <p class="text-[13px] text-slate-500 leading-[1.8] mt-3">They open your chat page and ask about your services, prices or hours, or request an appointment.</p>
+      </article>
+      <article class="rounded-2xl bg-white border border-[#edf0f6] p-7 sm:p-8">
+        <span class="inline-grid place-items-center h-10 w-10 rounded-xl text-xs font-semibold" style="background:#16ad9a14;color:#16ad9a">02</span>
+        <h4 class="text-[18px] font-semibold tracking-tight mt-6">The AI answers and books</h4>
+        <p class="text-[13px] text-slate-500 leading-[1.8] mt-3">It replies from your knowledge base. When they give their name, phone, service and preferred time, it books a free slot of the length you set in Settings. The appointment always ends before you close, and closed days, holidays, overlaps and duplicate phone numbers are refused.</p>
+      </article>
+      <article class="rounded-2xl bg-white border border-[#edf0f6] p-7 sm:p-8">
+        <span class="inline-grid place-items-center h-10 w-10 rounded-xl text-xs font-semibold" style="background:#9778c814;color:#9778c8">03</span>
+        <h4 class="text-[18px] font-semibold tracking-tight mt-6">You see it in the dashboard</h4>
+        <p class="text-[13px] text-slate-500 leading-[1.8] mt-3">The appointment lands in your admin workspace. You can search, filter, and mark it confirmed, completed or cancelled, and open the original conversation when you need context.</p>
+      </article>
+    </div>
+    <a href="/chat" class="btn-primary mt-10">See the visitor experience →</a>
+  </div>
+</section>
+
+<section id="features" class="py-20 sm:py-28">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div class="max-w-2xl">
+        <p class="text-[#5064eb] text-[11px] uppercase tracking-[.18em] font-semibold">Features</p>
+        <h2 class="text-[31px] sm:text-[39px] font-semibold tracking-[-.035em] mt-4 leading-tight">What you can actually do with it.</h2>
+        <p class="text-slate-500 text-sm leading-[1.85] mt-4">Every item below is in the app today. There is no website embed snippet, and the app does not send email or text-message notifications.</p>
+      </div>
+      <a href="/admin/login" class="btn-secondary w-fit">Open admin workspace <span>→</span></a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+      <article class="p-6 border border-[#e8ecf3] rounded-2xl hover:border-[#ccd4f5] hover:shadow-soft transition">
+        <span class="text-[11px] font-medium text-[#6576e2]">01</span>
+        <h3 class="text-[15px] font-semibold mt-5">Answers from your knowledge</h3>
+        <p class="text-xs text-slate-500 leading-[1.8] mt-3">The receptionist replies using the services, prices, hours and FAQs you keep in your knowledge base — not generic guesses.</p>
+      </article>
+      <article class="p-6 border border-[#e8ecf3] rounded-2xl hover:border-[#ccd4f5] hover:shadow-soft transition">
+        <span class="text-[11px] font-medium text-[#6576e2]">02</span>
+        <h3 class="text-[15px] font-semibold mt-5">Booking that respects your hours</h3>
+        <p class="text-xs text-slate-500 leading-[1.8] mt-3">Set appointment length in Settings (5–480 minutes). Bookings go only into free slots and must end by closing time. Closed weekdays, holidays, overlaps and a second booking on the same phone number are refused.</p>
+      </article>
+      <article class="p-6 border border-[#e8ecf3] rounded-2xl hover:border-[#ccd4f5] hover:shadow-soft transition">
+        <span class="text-[11px] font-medium text-[#6576e2]">03</span>
+        <h3 class="text-[15px] font-semibold mt-5">Collects the details you need</h3>
+        <p class="text-xs text-slate-500 leading-[1.8] mt-3">To book, the chat collects the visitor’s name, phone number, service and preferred date and time. A “Required info” button on the chat page explains this to them.</p>
+      </article>
+      <article class="p-6 border border-[#e8ecf3] rounded-2xl hover:border-[#ccd4f5] hover:shadow-soft transition">
+        <span class="text-[11px] font-medium text-[#6576e2]">04</span>
+        <h3 class="text-[15px] font-semibold mt-5">A dashboard for every booking</h3>
+        <p class="text-xs text-slate-500 leading-[1.8] mt-3">See today’s and upcoming appointments, conversation activity and booking conversion. Search and filter bookings, update their status, and jump to the original chat.</p>
+      </article>
+      <article class="p-6 border border-[#e8ecf3] rounded-2xl hover:border-[#ccd4f5] hover:shadow-soft transition">
+        <span class="text-[11px] font-medium text-[#6576e2]">05</span>
+        <h3 class="text-[15px] font-semibold mt-5">A knowledge base you edit</h3>
+        <p class="text-xs text-slate-500 leading-[1.8] mt-3">Add, edit, categorise or turn off answers whenever your services or prices change, so the receptionist stays aligned with your business.</p>
+      </article>
+      <article class="p-6 border border-[#e8ecf3] rounded-2xl hover:border-[#ccd4f5] hover:shadow-soft transition">
+        <span class="text-[11px] font-medium text-[#6576e2]">06</span>
+        <h3 class="text-[15px] font-semibold mt-5">Your name and logo, everywhere</h3>
+        <p class="text-xs text-slate-500 leading-[1.8] mt-3">Set your business name and upload a logo in Settings. It appears in the admin, the landing page, the chat header and next to every assistant reply.</p>
+      </article>
+      <article class="p-6 border border-[#e8ecf3] rounded-2xl hover:border-[#ccd4f5] hover:shadow-soft transition">
+        <span class="text-[11px] font-medium text-[#6576e2]">07</span>
+        <h3 class="text-[15px] font-semibold mt-5">A chat that fits the screen</h3>
+        <p class="text-xs text-slate-500 leading-[1.8] mt-3">The visitor chat is built for phones and desktops. On a larger screen, visitors can drag the corner to resize the window. Share your receptionist link from Settings — it is a page on your site, not a third-party widget.</p>
+      </article>
+      <article class="p-6 border border-[#e8ecf3] rounded-2xl hover:border-[#ccd4f5] hover:shadow-soft transition">
+        <span class="text-[11px] font-medium text-[#6576e2]">08</span>
+        <h3 class="text-[15px] font-semibold mt-5">Your server, your AI key, your data</h3>
+        <p class="text-xs text-slate-500 leading-[1.8] mt-3">Install it on your own computer or VPS. Use your OpenAI-compatible API key (OpenAI, Groq, OpenRouter, Together or a local Ollama server); the key is encrypted at rest. Admin access uses signed sessions, CSRF protection, bcrypt passwords and rate limits. Records stay scoped to your business.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="benefits" class="bg-[#f5f7fc] py-20 sm:py-28 border-y border-slate-100">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl mx-auto text-center">
+      <p class="text-[#5064eb] text-[11px] uppercase tracking-[.18em] font-semibold">Why FrontDesk</p>
+      <h2 class="text-[32px] sm:text-[40px] font-semibold tracking-[-.035em] mt-4 leading-tight">Own the front desk.<br class="hidden sm:block"> Keep the conversations.</h2>
+      <p class="text-slate-500 leading-relaxed text-sm sm:text-[15px] mt-5">Built for appointment-based service businesses that want a receptionist on their website without renting someone else’s inbox.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
+      <article class="rounded-2xl bg-white border border-[#edf0f6] p-7 sm:p-8">
+        <span class="inline-grid place-items-center h-10 w-10 rounded-xl text-xs font-semibold" style="background:#5064eb14;color:#5064eb">01</span>
+        <h3 class="text-[18px] font-semibold tracking-tight mt-6">Don’t miss after-hours leads</h3>
+        <p class="text-[13px] text-slate-500 leading-[1.8] mt-3">The chat is ready whenever a visitor opens it — evenings, weekends or holidays. Appointments are still offered only inside your opening hours, so your calendar stays realistic.</p>
+      </article>
+      <article class="rounded-2xl bg-white border border-[#edf0f6] p-7 sm:p-8">
+        <span class="inline-grid place-items-center h-10 w-10 rounded-xl text-xs font-semibold" style="background:#16ad9a14;color:#16ad9a">02</span>
+        <h3 class="text-[18px] font-semibold tracking-tight mt-6">Less time on the phone</h3>
+        <p class="text-[13px] text-slate-500 leading-[1.8] mt-3">Routine questions and booking requests are handled in the chat. You review the results in one dashboard instead of piecing together calls, messages and notes.</p>
+      </article>
+      <article class="rounded-2xl bg-white border border-[#edf0f6] p-7 sm:p-8">
+        <span class="inline-grid place-items-center h-10 w-10 rounded-xl text-xs font-semibold" style="background:#9778c814;color:#9778c8">03</span>
+        <h3 class="text-[18px] font-semibold tracking-tight mt-6">Your software, your data</h3>
+        <p class="text-[13px] text-slate-500 leading-[1.8] mt-3">FrontDesk AI is self-hosted. You run it on your own server or computer, use your own AI key, and keep the database with you. It is licensed as a one-time, single-site purchase — not a monthly rented inbox.</p>
+      </article>
+      <article class="rounded-2xl bg-white border border-[#edf0f6] p-7 sm:p-8">
+        <span class="inline-grid place-items-center h-10 w-10 rounded-xl text-xs font-semibold" style="background:#5064eb14;color:#5064eb">04</span>
+        <h3 class="text-[18px] font-semibold tracking-tight mt-6">Your branding, quick to try</h3>
+        <p class="text-[13px] text-slate-500 leading-[1.8] mt-3">Put your business name and logo on the chat. Open the included demo with fictional data and no account. When you install it for real, set your hours, appointment length, FAQs and AI key in Settings.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="pb-20 sm:pb-28 pt-20 sm:pt-28">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="bg-[#edf1ff] rounded-[26px] py-12 px-6 sm:px-12 overflow-hidden relative">
+      <div class="absolute -right-16 -top-28 w-80 h-80 bg-white/50 rounded-full blur-xl"></div>
+      <div class="relative max-w-3xl">
+        <p class="text-[11px] uppercase tracking-[.16em] font-semibold text-[#5669cf]">See it working, end to end</p>
+        <h2 class="text-[28px] sm:text-[36px] font-semibold tracking-[-.03em] mt-4">Ask a question. Book a slot.<br class="hidden sm:block"> Find it in the admin.</h2>
+        <p class="text-slate-500 text-sm leading-relaxed mt-4">Open the visitor chat and try a question or a booking. Then visit the admin workspace to see the appointment, the conversation and the knowledge base — using fictional demonstration data, with no setup required.</p>
+        <div class="flex flex-col sm:flex-row gap-3 mt-7"><a href="/admin/login" class="btn-primary">Explore the live demo →</a><a href="/chat" class="btn-secondary !border-transparent !bg-white/70">Try visitor chat ↗</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="bg-[#141c39] py-10"><div class="max-w-7xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row gap-5 justify-between sm:items-center"><a href="/" class="flex items-center gap-2 text-white font-semibold text-sm">{{ brand.brand_mark(logo_url, "!w-8 !h-8 !text-sm") }}FrontDesk AI</a><p class="text-[11px] text-slate-400">A self-hosted front desk for appointment-based businesses.</p><div class="flex gap-6 text-xs text-slate-400"><a class="hover:text-white" href="/chat">Visitor chat</a><a class="hover:text-white" href="/admin/login">Admin login</a></div></div></footer>
+</body>
+</html>
